@@ -1,0 +1,171 @@
+html{
+    scroll-behavior: smooth;
+}
+
+.skip a {
+    position: absolute;
+    top: -40px; 
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+  }
+  
+  /*Write selector/rule property to position the skip class element when it is in focus*/
+  .skip a:focus {
+    top: 20px;
+  }
+ 
+body{
+    background-image: url("../images/background.jpeg");
+    margin: 0;
+    padding: 0;
+}
+
+li, a {
+    text-decoration: none;
+    font-family: Arial;
+    font-weight: 500;
+    font-size: 18px;
+    color: black;
+    font-family: Arial;
+    padding: 20 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+
+.nav {
+    list-style: none;
+}
+
+.nav li {
+    display: inline-block;
+    padding: 25px 25px 25px;
+}
+
+.nav li:hover {
+    background: lightblue;
+ }
+
+.logo {
+    font-size: 27px;
+    font-family: 'Times New Roman';
+    color: black;
+    padding: 0px 0px 0px 25px;
+}
+
+header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+/*mobile view index styling*/
+ .bb{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: black;
+    border-radius: 25px;
+ }
+
+ .bb img{
+    padding: 20px;
+    background-color: lightpink;
+    object-fit: 700px;
+ }
+ .container h2 {
+    font-size: 50px;
+    text-align: center;
+    color: black;
+}
+
+/*mobile view apparel styling*/
+.pants {
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    justify-content: center;
+    grid-gap: 10px;
+    padding: 0px;
+ }
+
+.container1 h2 {
+    font-size: 50px;
+    text-align: center;
+    color: black;
+}
+ .pants img{
+    object-fit: 700px;
+ }
+
+ .skirts {
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    justify-content: center;
+    grid-gap: 10px;
+    padding: 0px;
+ }
+
+
+@media screen and (min-width: 700px) {
+/*index styling*/
+.bb{
+    margin: 0 auto;
+    display: grid;
+    justify-content: space-evenly;
+    padding: 20px;
+    grid-gap: 20px;
+    width: 1000px;
+    grid-template-columns: 350px 350px;
+    background-color: black;
+    border-radius: 25px;
+ }
+
+ .bb img{
+    padding: 20px;
+    background-color: lightpink;
+    width: 800px;
+    height: 500px;
+    object-fit: 700px;
+ }
+ .container h2 {
+    font-size: 50px;
+    text-align: center;
+    color: black;
+}
+
+ /*apparel styling*/
+ .pants {
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    justify-content: center;
+    grid-gap: 10px;
+    padding: 25px;
+ }
+.container1 h2 {
+    font-size: 50px;
+    text-align: center;
+    color: black;
+}
+ .pants img{
+    width: 800px;
+    height: 550px;
+    object-fit: 700px;
+ }
+
+ .skirts {
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    justify-content: center;
+    grid-gap: 10px;
+    padding: 25px;
+ }
+
+}
